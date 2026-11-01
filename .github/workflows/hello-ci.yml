@@ -17,3 +17,6 @@ jobs:
 
       - name: Say hello
         run: echo "Hello from CI"
+
+      - name: Show repository contents
+        run: ls
