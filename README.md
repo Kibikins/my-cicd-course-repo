@@ -10,3 +10,8 @@ markdown
 
 ## Branch Practice
 This change was made on a separate branch using GitHub Desktop.
+
+markdown
+
+## Week 2
+This week introduces a simple GitHub Actions workflow.
