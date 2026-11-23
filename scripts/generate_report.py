@@ -18,6 +18,7 @@ def main():
         "- .github/workflows/python-tests.yml",
         "- scripts/generate_report.py",
         "",
+        "Course Week: Week 4",
         "Status: Build artifact created successfully."
     ]
  
