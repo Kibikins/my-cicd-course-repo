@@ -2,6 +2,9 @@ from pathlib import Path
 from datetime import datetime
  
  
+VERSION = "v1.0.0"
+ 
+ 
 def main():
     output_dir = Path("build")
     output_dir.mkdir(exist_ok=True)
@@ -10,16 +13,18 @@ def main():
     report_contents = [
         "CI/CD Build Report",
         "===================",
+        f"Version: {VERSION}",
         f"Generated at: {datetime.utcnow().isoformat()} UTC",
         "",
         "Project files:",
         "- src/calculator.py",
         "- tests/test_calculator.py",
         "- .github/workflows/python-tests.yml",
+        "- .github/workflows/security-scan.yml",
         "- scripts/generate_report.py",
+        "- CHANGELOG.md",
         "",
-        "Course Week: Week 4",
-        "Status: Build artifact created successfully."
+        "Status: Release artifact created successfully."
     ]
  
     report_file.write_text("\n".join(report_contents), encoding="utf-8")
